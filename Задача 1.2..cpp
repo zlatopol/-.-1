@@ -26,9 +26,6 @@ struct ci_char_traits : public std::char_traits<char>
             }
             return rez;
         }
-// Используем memicmp, если эта функция
-// имеется на вашей платформе; в противном
-// случае надо писать собственную версию
     static const char *
     find( const char * s, int n, char a )
     {
